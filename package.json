@@ -9,6 +9,7 @@
     "build": "tsc",
     "build-client": "cd faucet-client && node build-client.js",
     "start": "tsc && node dist/app.js",
+    "start:inspect": "tsc && node --inspect=127.0.0.1:9999 dist/app.js",
     "bundle": "tsc && webpack --mode production",
     "test": "mocha --exit --trace-warnings 'tests/**/*.ts'",
     "test-coverage": "c8 --reporter=text --reporter=lcov mocha --exit -r ts-node/register 'tests/**/*.ts'"
