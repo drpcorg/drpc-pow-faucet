@@ -2,7 +2,7 @@
 
 Modularized faucet for EVM chains with different protection methods (Captcha, Mining, IP, Mainnet Balance, Gitcoin Passport and more)
 
-# Run
+# Run backend
 
 [Faucet Operator Wiki](https://github.com/pk910/PoWFaucet/wiki/Operator-Wiki)
 
@@ -11,6 +11,14 @@ npm i
 
 npm run start # start backend 
 npm run start:inspect # start backend with debugging available
+```
+
+# Build client
+
+```sh
+cd faucet-client
+npm i
+npm run build
 ```
 
 Faucet starts at port 8888 by default
