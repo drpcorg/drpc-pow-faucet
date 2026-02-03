@@ -29,6 +29,10 @@ export class MySQLDriver extends BaseDriver<IMySQLOptions> {
       user: options.username,
       password: options.password,
       database: options.database,
+      ssl:
+        {
+          rejectUnauthorized: false
+        }
     });
   }
   public override async close(): Promise<void> {
